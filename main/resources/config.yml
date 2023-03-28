@@ -1,0 +1,36 @@
+tax:
+  tax-type: progressive-tax    # Supported Taxes: flat-percent, flat-amount, progressive-tax, pay-tax
+  flat-percent: '0.0037'
+  flat-amount: '50'
+  pay-amount: '0.01'
+  brackets:
+    - min: 0
+      max: 20000
+      rate: 0.0
+    - min: 20000
+      max: 50000
+      rate: 0.0025
+    - min: 50000
+      max: 100000
+      rate: 0.0037
+    - min: 100000
+      max: 250000
+      rate: 0.0062
+    - min: 250000
+      max: 500000
+      rate: 0.0075
+    - min: 500000
+      max: 100000000
+      rate: 0.0087
+  exclude:
+    - f6c61472-3641-4abf-87d1-479b59b3700f     # BusinessCraftGov UUID, configurable by /tax exclude command
+
+config:
+  # UUID of account receiving tax income (Get it from here https://minecraftuuid.com)
+  admin-account: fc3618ba-58b8-4c5f-9b00-d0ce4881bd78
+  # BusinessCraftGov UUID: fc3618ba-58b8-4c5f-9b00-d0ce4881bd78
+
+  # Test Account (patfcknF) UUID: f6c61472-3641-4abf-87d1-479b59b3700f
+  currency: KR              # Currency used by server
+  schedule: false           # Do not touch, configurable by command /tax schedule
+  enable-paytax: false      # Do not touch, configurable by command /tax enable-paytax

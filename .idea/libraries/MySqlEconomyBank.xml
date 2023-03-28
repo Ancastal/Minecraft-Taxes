@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MySqlEconomyBank">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/main/java/org/ancastal/taxes/libraries/MySqlEconomyBank.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

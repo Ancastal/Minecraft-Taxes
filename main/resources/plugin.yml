@@ -1,0 +1,42 @@
+name: ${project.name}
+version: ${project.version}
+main: ${main.class}
+description: A plugin to manage taxes in your server.
+author: ${author}
+
+api-version: 1.13
+
+depend:
+  - MysqlEconomyBank
+  - Vault
+softdepend:
+  - EssentialsX
+
+commands:
+  tax:
+    description: Collect or set taxes.
+    usage: /tax <set-tax|collect|flat-amount|flat-percent|pay-amount>
+    permission: taxes.command.tax
+    aliases: [ collecttax, settax, flatax ]
+
+permissions:
+  taxes.command.use:
+    description: General permission to access /tax commands
+    default: false
+  taxes.command.tax:
+    description: Allows access to the /tax command.
+    default: false
+  taxes.command.collect:
+    description: Allows access to the /tax collect.
+    default: false
+  taxes.command.set:
+    description: Allows access to the /tax collect.
+    default: false
+  businesscraft.developer:
+    description: Developers permission node
+    default: op
+    children:
+      taxes.command.tax: true
+      taxes.command.collect: true
+      taxes.command.set: true
+      taxes.command.use: true
