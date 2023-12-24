@@ -23,14 +23,12 @@ tax:
       max: 100000000
       rate: 0.0087
   exclude:
-    - f6c61472-3641-4abf-87d1-479b59b3700f     # BusinessCraftGov UUID, configurable by /tax exclude command
+    - UUID     # Admin UUID, configurable by /tax exclude command
 
 config:
   # UUID of account receiving tax income (Get it from here https://minecraftuuid.com)
-  admin-account: fc3618ba-58b8-4c5f-9b00-d0ce4881bd78
-  # BusinessCraftGov UUID: fc3618ba-58b8-4c5f-9b00-d0ce4881bd78
+  admin-account:
 
-  # Test Account (patfcknF) UUID: f6c61472-3641-4abf-87d1-479b59b3700f
   currency: KR              # Currency used by server
   schedule: false           # Do not touch, configurable by command /tax schedule
   enable-paytax: false      # Do not touch, configurable by command /tax enable-paytax
